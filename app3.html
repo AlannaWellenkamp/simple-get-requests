@@ -13,7 +13,7 @@
 
 <body class="wrapper">
   <header>
-    <h1>Simple Get Requests Assignment</h1>
+    <h1>Simple Get Requests Assignment 3</h1>
     <nav>
         <p><a href="app1.html">Assignment 1</a></p>
         <p><a href="app2.html">Assignment 2</a></p>
@@ -21,9 +21,18 @@
       </nav>
   </header>
   <main>
+      <form id="js-breed-form">
+          <label for="breed">What dog breed would you like to see?</label>
+          <input id="breed" type="text" required>
+          <button type="submit">Submit</button>
+      </form>
+      <section class="results hidden">
+        <img class="results-img" alt="placeholder">
+      </section>
+
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
-  <script src="app1.js"></script>
+  <script src="app3.js"></script>
 </body>
 
 </html>

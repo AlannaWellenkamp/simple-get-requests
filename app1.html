@@ -13,14 +13,24 @@
 
 <body class="wrapper">
   <header>
-    <h1>Simple Get Requests Assignment</h1>
+    <h1>Simple Get Requests Assignment 1</h1>
     <nav>
-        <p><a href="app1.html">Assignment 1</a></p>
-        <p><a href="app2.html">Assignment 2</a></p>
-        <p><a href="app3.html">Assignment 3</a></p>
-      </nav>
+      <p><a href="app1.html">Assignment 1</a></p>
+      <p><a href="app2.html">Assignment 2</a></p>
+      <p><a href="app3.html">Assignment 3</a></p>
+    </nav>
   </header>
+  
   <main>
+      <form id="js-number-form">
+          <label for="pic-num">How many pictures? (1-50)</label>
+          <input id="pic-num" type="number" value="3" required>
+          <button type="submit">Submit</button>
+      </form>
+      <section class="results hidden">
+        <img class="results-img" alt="placeholder">
+      </section>
+
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
   <script src="app1.js"></script>
