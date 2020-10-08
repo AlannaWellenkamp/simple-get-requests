@@ -16,9 +16,9 @@ function getDogPics(userNum) {
 
 function displayResults(responseJson) {
   console.log(responseJson);
-  $('.results').html('');
+  $('.results-images').html('');
   responseJson.message.forEach(renderedImg => {
-    $('.results').append(`<img src='${renderedImg}' class='results-img multiple-img'>`);
+    $('.results-images').append(`<img src='${renderedImg}' class='results-img multiple-img'>`);
   });  
   $('.results').removeClass('hidden');
 }
