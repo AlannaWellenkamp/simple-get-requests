@@ -23,7 +23,9 @@ function displayResults(responseJson) {
 function submitListen() {
     $('#js-breed-form').submit(e => {
         e.preventDefault();
-        const breed = $('#breed').val();
+        let breed = $('#breed').val();
+        breed = breed.toLowerCase();
+        console.log(breed);
         getDogPics(breed);
     })
 }
